@@ -181,7 +181,7 @@ const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://lechatapaillettes.vercel.app/thankyou"
+            value="https://julie-psychomot.vercel.app/thankyou"
           />
           <input type="hidden" name="_captcha" value="false" />
         </form>

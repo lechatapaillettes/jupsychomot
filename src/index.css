@@ -129,7 +129,8 @@ h3 {
 /* Sections */
 
 section.accueil,
-section.NotFound {
+section.NotFound,
+section.ThankYou {
   min-height: 100vh;
 }
 
@@ -139,7 +140,8 @@ section.quandconsulter,
 section.guidance,
 section.quisuisje,
 section.contact,
-section.NotFound {
+section.NotFound,
+section.ThankYou {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,12 +187,14 @@ section.contact {
 }
 
 .intro-name,
-.NotFound-title {
+.NotFound-title,
+.ThankYou-title {
   font-size: 10rem;
 }
 
 .intro-title,
-.NotFound-text {
+.NotFound-text,
+.ThankYou-text {
   font-size: 3rem;
 }
 
@@ -400,7 +404,9 @@ footer {
   font-size: 0.7rem;
 }
 
-footer a:hover {
+footer a:hover,
+section.NotFound a:hover,
+div.ThankYou-container a:hover {
   color: #839973;
 }
 
