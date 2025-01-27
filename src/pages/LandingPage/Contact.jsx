@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="form-box">
         <form
           autoComplete="on"
-          action="https://formsubmit.co/juliedheygere.psychomot@protonmail.com"
+          action="https://formsubmit.co/79999d6284069b3f925abe0b7cabb8fd"
           method="POST">
           <div className="input-container">
             <label>
