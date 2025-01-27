@@ -8,15 +8,14 @@ const Contact = () => {
         <form
           autoComplete="on"
           action="https://formsubmit.co/juliedheygere.psychomot@protonmail.com"
-          method="POST"
-        >
+          method="POST">
           <div className="input-container">
             <label>
               Nom et prénom du patient
               <input
                 type="text"
                 id="name"
-                name="nom"
+                name="Nom et prénom du patient"
                 required
                 minLength={3}
                 className="inputs"
@@ -31,7 +30,7 @@ const Contact = () => {
               Date de naissance
               <input
                 type="date"
-                name="date-naissance"
+                name="Date de naissance"
                 min="1925-01-01"
                 max="2025-12-31"
                 required
@@ -46,7 +45,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="parent-name"
-                name="nom-parent"
+                name="Nom et prénom du parent"
                 minLength={3}
                 placeholder="Si patient mineur"
                 className="inputs"
@@ -60,7 +59,7 @@ const Contact = () => {
               <input
                 type="tel"
                 id="tel"
-                name="telephone"
+                name="Téléphone"
                 required
                 minLength={10}
                 className="inputs"
@@ -76,7 +75,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
+                name="E-mail"
                 required
                 className="inputs"
               />
@@ -98,7 +97,7 @@ const Contact = () => {
                     <input
                       type="radio"
                       id="prescription-oui"
-                      name="prescription"
+                      name="Prescription"
                       value="oui"
                       required
                       className="inputs"
@@ -111,7 +110,7 @@ const Contact = () => {
                     <input
                       type="radio"
                       id="prescription-non"
-                      name="prescription"
+                      name="Prescription"
                       value="non"
                       required
                       className="inputs"
@@ -134,7 +133,7 @@ const Contact = () => {
                     <input
                       type="radio"
                       id="bilan-oui"
-                      name="bilan"
+                      name="Bilan"
                       value="oui"
                       required
                       className="inputs"
@@ -147,7 +146,7 @@ const Contact = () => {
                     <input
                       type="radio"
                       id="bilan-non"
-                      name="bilan"
+                      name="Bilan"
                       value="non"
                       required
                       className="inputs"
@@ -163,7 +162,7 @@ const Contact = () => {
               Motif de la demande
               <textarea
                 id="text"
-                name="message"
+                name="Message"
                 cols="30"
                 rows="10"
                 required
