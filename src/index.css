@@ -291,7 +291,7 @@ section.contact {
 
 form {
   min-height: 20rem;
-  width: 30rem;
+  width: 75%;
   padding: 2rem 5rem;
   margin-top: 2rem;
   background-color: #e2b9b3;
@@ -472,6 +472,7 @@ div.ThankYou-container a:hover {
 
   .burger-icon {
     opacity: 1;
+    z-index: 99;
   }
 
   .burger-icon-hidden {
@@ -497,12 +498,6 @@ div.ThankYou-container a:hover {
     text-transform: uppercase;
   }
 
-  .burger-redes {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 2rem;
-  }
-
   /* Sections */
 
   section.accueil,
@@ -520,6 +515,7 @@ div.ThankYou-container a:hover {
   }
 
   .intro-container {
+    margin: 1rem;
     padding: 5rem 1rem;
   }
 
@@ -594,9 +590,10 @@ div.ThankYou-container a:hover {
 
   /* Contact */
 
-  form {
-    width: 15rem;
-  }
+form {
+  margin: 1rem 1.5rem 0 1.5rem;
+  padding: 1.5rem;
+}
 
 }
 

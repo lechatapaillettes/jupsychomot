@@ -150,10 +150,10 @@ const Navbar = () => {
             />
           </div>
         </div>
+
         {isMenuOpen && (
           <Fade cascade damping={0.1}>
             <ul className="burger-open">
-
               <li className="burger-item">
                 <NavLink
                   className="burger-link"
@@ -176,7 +176,9 @@ const Navbar = () => {
                 <NavLink
                   className="burger-link"
                   to="/#quandconsulter"
-                  onClick={(e) => handleNavLinkClick(e, "quandconsulter", closeMenu)}
+                  onClick={(e) =>
+                    handleNavLinkClick(e, "quandconsulter", closeMenu)
+                  }
                 >
                   <p>Quand consulter ?</p>
                 </NavLink>
@@ -189,7 +191,7 @@ const Navbar = () => {
                 >
                   <p>Guidance Parentale</p>
                 </NavLink>
-              </li> 
+              </li>
               <li className="burger-item">
                 <NavLink
                   className="burger-link"
@@ -198,7 +200,7 @@ const Navbar = () => {
                 >
                   <p>Qui suis-je ?</p>
                 </NavLink>
-              </li> 
+              </li>
               <li className="burger-item">
                 <NavLink
                   className="burger-link"
@@ -207,8 +209,7 @@ const Navbar = () => {
                 >
                   <p>Contact</p>
                 </NavLink>
-              </li> 
-
+              </li>
             </ul>
           </Fade>
         )}
