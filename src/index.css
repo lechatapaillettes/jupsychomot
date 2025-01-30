@@ -57,6 +57,10 @@ h3 {
   background-color: #e2b9b3;
 }
 
+.nav-mobile {
+  display: none;
+}
+
 .nav-list {
   display: flex;
   justify-content: space-around;
@@ -111,11 +115,11 @@ h3 {
 }
 
 .nav-link:hover {
-  color: #E8DBCB;
+  color: #e8dbcb;
 }
 
 .nav-link.active {
-  color: #B57281;
+  color: #b57281;
 }
 
 .nav-link.active::before,
@@ -313,7 +317,7 @@ label {
   background-color: #e8dbcb;
   border: none;
   border-bottom: solid 1px #613942;
-  width: 30rem;
+  width: 100%;
   font-family: "Quicksand", sans-serif;
   font-size: 0.9rem;
   font-weight: 200;
@@ -418,7 +422,185 @@ div.ThankYou-container a:hover {
   color: #839973;
 }
 
-/* Fond */
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  /* Navbar */
+
+  .navbar {
+    position: fixed;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    width: 100%;
+    border-bottom: 1px solid #e2b9b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #e2b9b3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-mobile,
+  .burger-open {
+    position: fixed;
+    z-index: 50;
+    height: 3rem;
+    box-sizing: border-box;
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .burger-icon-close {
+    font-size: 1.5rem;
+  }
+
+  .burger-icon-open {
+    font-size: 1.2rem;
+  }
+
+  .burger-icon-container {
+    display: flex;
+  }
+
+  .burger-icon {
+    opacity: 1;
+  }
+
+  .burger-icon-hidden {
+    opacity: 0;
+    display: none;
+  }
+
+  .burger-open {
+    right: 0;
+    padding: 0.25rem;
+    background-color: #e2b9b3;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger-item {
+    margin: 2rem 0;
+    text-transform: uppercase;
+  }
+
+  .burger-redes {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Sections */
+
+  section.accueil,
+  section.NotFound,
+  section.ThankYou {
+    min-height: 89vh;
+  }
+
+  section.psychomot,
+  section.quandconsulter,
+  section.guidance,
+  section.quisuisje,
+  section.contact {
+    min-height: 83vh;
+  }
+
+  .intro-container {
+    padding: 5rem 1rem;
+  }
+
+  div.psychomot-container,
+  div.quandconsulter-container,
+  div.guidance-container,
+  div.quisuisje-container {
+    width: 100%;
+    padding: 2rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.psychomot-container,
+  div.guidance-container,
+  div.quisuisje-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  div.quandconsulter-container {
+    flex-wrap: wrap;
+  }
+
+  div.psychomot-container div.text-container,
+  div.guidance-container div.text-container,
+  div.quandconsulter-container div.text-container,
+  div.quisuisje-container div.text-container {
+    margin: 0 1.5rem;
+    padding: 2rem;
+  }
+
+  .intro-name,
+  .NotFound-title,
+  .ThankYou-title {
+    font-size: 6rem;
+  }
+
+  .intro-title,
+  .NotFound-text,
+  .ThankYou-text {
+    font-size: 2rem;
+  }
+
+  .section-titles {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  .h3-qd-consulter,
+  .h3-quisuisje {
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .img-salle,
+  .img-bureau,
+  .img-guidance,
+  .img-psychomot {
+    max-width: 20rem;
+  }
+
+  .img-salle,
+  .img-bureau,
+  .img-guidance {
+    margin-top: 1.5rem;
+  }
+
+  .img-psychomot {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Contact */
+
+  form {
+    width: 15rem;
+  }
+
+}
+
+/* Fond bulles */
 
 @keyframes move {
   100% {
