@@ -157,6 +157,14 @@ section.contact {
   padding-top: 5rem;
 }
 
+.motion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .intro-container {
   padding: 6rem;
   text-align: center;
@@ -332,7 +340,7 @@ input:valid ~ .icon-ok {
   display: block;
 }
 
-input:invalid ~ .icon-error {
+.input-container input:invalid:not(:placeholder-shown) ~ .icon-error {
   display: block;
 }
 
