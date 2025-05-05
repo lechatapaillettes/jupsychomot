@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import PsychomotAI from "../../assets/IMG/PHOTOS/PsychomotAI.webp";
+import PhotoJu from "../../assets/IMG/PHOTOS/PhotoJu.jpg";
 
 const QuiSuisJe = () => {
   return (
@@ -56,7 +56,7 @@ const QuiSuisJe = () => {
 
           <div className="img-container">
             <img
-              src={PsychomotAI}
+              src={PhotoJu}
               title="Psychomotricienne"
               alt="Psychomotricienne"
               className="img-psychomot"

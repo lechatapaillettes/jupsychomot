@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import GuidanceAI from "../../assets/IMG/PHOTOS/GuidanceAI.webp";
+import SalleGuidance from "../../assets/IMG/PHOTOS/SalleGuidance.jpg";
 
 const Guidance = () => {
   return (
@@ -19,7 +19,7 @@ const Guidance = () => {
         <div className="guidance-container">
           <div className="img-container">
             <img
-              src={GuidanceAI}
+              src={SalleGuidance}
               title="Salle de psychomotricité avec bureau et chaises pour guidance parentale"
               alt="Salle de psychomotricité avec bureau et chaises pour guidance parentale"
               className="img-guidance"
